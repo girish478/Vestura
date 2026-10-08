@@ -3,22 +3,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Virtual AI Try-On</title>
+    <meta
+      name="description"
+      content="Vestura VTON — Open-source virtual clothing try-on web application with pluggable local & cloud AI backends."
+    />
+    <meta name="theme-color" content="#f3efe8" />
+    <title>Vestura VTON — Open-Source Clothing Virtual Try-On</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS (CDN) — used for layout utility classes -->
     <script src="https://cdn.tailwindcss.com"></script>
-  <script type="importmap">
-{
-  "imports": {
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.24.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0"
-  }
-}
-</script>
-</head>
-  <body class="bg-gray-900 text-white">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              canvas: '#f3efe8',
+              surface: '#fffcf7',
+              ink: '#121110',
+              muted: '#5c574f',
+              line: '#d9d0c4',
+              accent: '#1f3d34',
+              'accent-soft': '#e8efeb',
+            },
+            fontFamily: {
+              display: ['"Instrument Serif"', 'Georgia', 'serif'],
+              sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
+            },
+            boxShadow: {
+              panel: '0 18px 50px rgba(18, 17, 16, 0.08)',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>

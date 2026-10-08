@@ -1,5 +1,0 @@
-{
-  "name": "Copy of Virtual AI Try-On",
-  "description": "An AI-powered application that allows users to upload a photo of a model and a photo of a garment, and generates a new image where the model is virtually wearing the garment with photorealistic results.",
-  "requestFramePermissions": []
-}

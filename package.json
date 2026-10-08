@@ -1,22 +1,33 @@
 {
-  "name": "copy-of-virtual-ai-try-on",
-  "private": true,
-  "version": "0.0.0",
+  "name": "vestura-vton",
+  "version": "1.0.0",
+  "description": "Vestura VTON — Open-source clothing try-on web application with pluggable AI backends",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "tsx server/index.ts",
     "build": "vite build",
-    "preview": "vite preview"
+    "typecheck": "tsc --noEmit",
+    "start": "cross-env NODE_ENV=production tsx server/index.ts",
+    "preview": "npm run build && cross-env NODE_ENV=production npm run start"
   },
   "dependencies": {
     "@google/genai": "^1.24.0",
-    "react-dom": "^19.2.0",
-    "react": "^19.2.0"
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
+    "@types/express": "^5.0.0",
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
+    "cross-env": "^7.0.3",
+    "tsx": "^4.19.3",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
-  }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
 }

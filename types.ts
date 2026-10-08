@@ -1,6 +1,1 @@
-
-export interface ImageState {
-  base64: string;
-  mimeType: string;
-  previewUrl: string;
-}
+export type { ImageState, ImagePayload } from './shared/imageTypes';
