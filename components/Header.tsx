@@ -38,7 +38,7 @@ export const Header: React.FC<HeaderProps> = ({ mode }) => {
           <span>{mode === 'local' ? 'Local / Free Mode' : 'Cloud API Mode'}</span>
         </div>
         <a
-          href="https://github.com"
+          href="https://github.com/girish478/Vestura"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-secondary py-1.5 px-3 text-xs"
